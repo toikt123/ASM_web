@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona Tour - DU LỊCH VIỆT NAM | Khám Phá Vùng Núi Hùng Vĩ & Danh Thắng</title>
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Mona Tour Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+    <!-- 1. HEADER TOPBAR (EXACT MATCH SCREENSHOT: GREEN BACKGROUND) -->
+    <div class="header-topbar">
+        <div class="topbar-container">
+            <div class="topbar-info">
+                <span><i class="fa-solid fa-location-dot"></i> 1073/23 Cách Mạng Tháng 8, P.7, Q.Tân Bình, TP.HCM</span>
+                <a href="mailto:info@themona.global"><i class="fa-solid fa-envelope"></i> info@themona.global</a>
+            </div>
+            <div class="topbar-actions">
+                <a href="sanpham.html" class="btn-topbar-cta">ĐẶT TOUR NGAY</a>
+                <div class="topbar-socials">
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. MAIN HEADER & NAVIGATION (EXACT MATCH SCREENSHOT: WHITE HEADER) -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-tree-city logo-tree-icon"></i>
+                    <div class="logo-text-wrap">
+                        <h1>Mona Tour</h1>
+                        <span class="logo-subtext">Tour & Travel - Việt Nam</span>
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="sanpham.html">Tours <i class="fa-solid fa-chevron-down" style="font-size: 11px;"></i></a></li>
+                    <li><a href="dangnhap.html">Đăng nhập</a></li>
+                    <li><a href="dangky.html">Đăng ký</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <a href="sanpham.html" class="header-icon-btn" title="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="dangky.html" class="header-user-btn" title="Tài khoản"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SLIDER BANNER SECTION (EXACT MATCH SCREENSHOT) -->
+    <div class="container" style="margin-top: 25px;">
+        <div class="hero-banner">
+            <img src="images/banner.jpg" alt="Khám phá vùng núi hùng vĩ">
+            <div class="hero-text-content">
+                <!-- Orange Slanted Badge -->
+                <div class="hero-orange-badge">Tour & Travels</div>
+                
+                <!-- Main Headline -->
+                <h2>Khám phá vùng núi hùng vĩ</h2>
+                
+                <!-- Subtitle -->
+                <p>Tận hưởng những chuyến phiêu lưu đầy hấp dẫn và khám phá cảnh quan thiên nhiên tuyệt đẹp của các tour du lịch Việt Nam.</p>
+                
+                <!-- Green Button -->
+                <a href="sanpham.html" class="btn-mona-green">
+                    Bắt đầu ngay <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- 4. SEARCH TOUR WIDGET -->
+        <fieldset style="margin-top: -10px;">
+            <legend><i class="fa-solid fa-magnifying-glass"></i> Tìm Kiếm & Đặt Tour Trực Tuyến</legend>
+            <form action="sanpham.html" method="get">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; align-items: end;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="search"><i class="fa-solid fa-location-dot"></i> Điểm Đến Mơ Ước:</label>
+                        <input type="text" id="search" name="keyword" class="form-control" placeholder="Hạ Long, Sapa, Hội An, Phú Quốc...">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="region"><i class="fa-solid fa-map"></i> Vùng Miền:</label>
+                        <select id="region" name="region" class="form-control">
+                            <option value="all">-- Tất Cả Vùng Miền --</option>
+                            <option value="north">Miền Bắc (Hạ Long, Sapa, Ninh Bình)</option>
+                            <option value="central">Miền Trung (Hội An, Đà Nẵng, Huế)</option>
+                            <option value="south">Miền Nam & Biển Đảo (Phú Quốc)</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="dep_date"><i class="fa-solid fa-calendar-days"></i> Ngày Khởi Hành:</label>
+                        <input type="date" id="dep_date" name="dep_date" class="form-control">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <button type="submit" class="btn btn-block"><i class="fa-solid fa-magnifying-glass"></i> Tìm Tour Ngay</button>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+
+        <!-- 5. MONA CATEGORIES GRID (DANH MỤC TRẢI NGHIỆM HOT) -->
+        <h2 class="section-title">Danh Mục Trải Nghiệm Du Lịch Nổi Bật</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/sapa.jpg" alt="Leo núi & Trekking Sapa">
+                <div class="category-overlay">
+                    <div class="category-title">
+                        <span>Chinh Phục Vùng Núi Sapa</span>
+                        <div class="category-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/halong.jpg" alt="Du thuyền 5 sao Hạ Long">
+                <div class="category-overlay">
+                    <div class="category-title">
+                        <span>Du Thuyền 5★ Vịnh Hạ Long</span>
+                        <div class="category-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/hoian.jpg" alt="Di sản văn hóa Hội An">
+                <div class="category-overlay">
+                    <div class="category-title">
+                        <span>Di Sản Đêm Phố Cổ Hội An</span>
+                        <div class="category-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/phuquoc.jpg" alt="Resort Biển Đảo Phú Quốc">
+                <div class="category-overlay">
+                    <div class="category-title">
+                        <span>Nghỉ Dưỡng Biển Đảo Phú Quốc</span>
+                        <div class="category-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. MONA 3 CORE FEATURES (LÝ DO CHỌN MONA TOUR) -->
+        <div class="mona-features-grid">
+            <div class="mona-feature-card">
+                <div class="feature-icon-box"><i class="fa-solid fa-user-shield"></i></div>
+                <div class="feature-content">
+                    <h3>An Toàn Đầu Tiên</h3>
+                    <p>Chúng tôi hiểu rằng khi bạn tham gia một hoạt động hay trải nghiệm, an toàn là yếu tố quan trọng hàng đầu.</p>
+                </div>
+            </div>
+            <div class="mona-feature-card">
+                <div class="feature-icon-box"><i class="fa-solid fa-tags"></i></div>
+                <div class="feature-content">
+                    <h3>Giá Ưu Đãi & Hấp Dẫn</h3>
+                    <p>Chúng tôi hiểu rằng giá cả là một yếu tố quan trọng khi bạn lựa chọn một hoạt động hay trải nghiệm du lịch.</p>
+                </div>
+            </div>
+            <div class="mona-feature-card">
+                <div class="feature-icon-box"><i class="fa-solid fa-person-hiking"></i></div>
+                <div class="feature-content">
+                    <h3>Hướng Dẫn Viên Đáng Tin Cậy</h3>
+                    <p>Đội ngũ người hướng dẫn của chúng tôi được chọn lọc kỹ càng và có kinh nghiệm nhiều năm trong lĩnh vực.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. THÔNG TIN NỔI BẬT & ĐỊNH DẠNG VĂN BẢN (SLIDE 1.1 WEB101) -->
+        <div class="highlight-box">
+            <h3><i class="fa-solid fa-shield-halved"></i> Cam Kết Dịch Vụ Du Lịch Đẳng Cấp Từ Mona Tour</h3>
+            <p>
+                Tất cả các tour du lịch do công ty tổ chức đều đạt chuẩn dịch vụ từ <strong>4 đến 5 sao</strong>, bao gồm 
+                <strong>bảo hiểm du lịch tối đa 100 triệu VNĐ/vụ</strong>.
+                Chúng tôi cam kết mang tới hành trình <em>an toàn, thư giãn và trọn vẹn cảm xúc</em> cho mỗi du khách.
+            </p>
+            <p style="margin-top: 10px;">
+                Giá niêm yết trọn gói đã bao gồm thuế <abbr title="Value Added Tax">VAT</abbr> và ưu đãi mùa du lịch 2026:
+                <del>Giá cũ: 8.500.000 VNĐ</del> &nbsp;&rarr;&nbsp; <strong>Giá ưu đãi hôm nay:
+                    <mark>6.990.000 VNĐ/khách</mark></strong> (Tiết kiệm ngay <strong>1.510.000</strong> VNĐ).
+            </p>
+        </div>
+
+        <!-- 8. DANH SÁCH TOUR DU LỊCH NỔI BẬT -->
+        <h2 class="section-title">Các Tour Du Lịch Hot Nhất 2026</h2>
+
+        <div class="product-grid">
+            <!-- Tour 1 -->
+            <div class="car-card">
+                <div class="card-img-wrapper">
+                    <img src="images/halong.jpg" alt="Tour Vịnh Hạ Long">
+                    <span class="card-tag"><i class="fa-solid fa-star"></i> 4.9 (1.2k)</span>
+                    <span class="card-discount">-20%</span>
+                </div>
+                <div class="car-card-body">
+                    <div class="card-location"><i class="fa-solid fa-location-dot"></i> Hạ Long, Quảng Ninh</div>
+                    <h3 class="car-card-title">Tour Vịnh Hạ Long - Du Thuyền 5 Sao</h3>
+                    <div class="tour-features">
+                        <span class="feature-pill"><i class="fa-regular fa-clock"></i> 3N2Đ</span>
+                        <span class="feature-pill"><i class="fa-solid fa-ship"></i> Du Thuyền 5★</span>
+                        <span class="feature-pill"><i class="fa-solid fa-van-shuttle"></i> Dcar Limousine</span>
+                    </div>
+                    <p class="car-desc">Hành trình trải nghiệm du thuyền 5 sao đẳng cấp, chèo thuyền Kayak ngắm hang Động Sửng Sốt và Đảo Ti Tốp.</p>
+                    <div class="card-price-row">
+                        <div class="price-box">
+                            <div class="old-price">6.000.000 VNĐ</div>
+                            <div class="car-price">4.850.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <a href="chitiet.html" class="btn btn-block">Xem Chi Tiết Tour</a>
+                </div>
+            </div>
+
+            <!-- Tour 2 -->
+            <div class="car-card">
+                <div class="card-img-wrapper">
+                    <img src="images/hoian.jpg" alt="Tour Phố Cổ Hội An">
+                    <span class="card-tag"><i class="fa-solid fa-star"></i> 4.95 (980)</span>
+                    <span class="card-discount">-15%</span>
+                </div>
+                <div class="car-card-body">
+                    <div class="card-location"><i class="fa-solid fa-location-dot"></i> Hội An, Quảng Nam</div>
+                    <h3 class="car-card-title">Tour Phố Cổ Hội An - Đêm Đèn Lồng Di Sản</h3>
+                    <div class="tour-features">
+                        <span class="feature-pill"><i class="fa-regular fa-clock"></i> 3N2Đ</span>
+                        <span class="feature-pill"><i class="fa-solid fa-hotel"></i> Khách Sạn 4★</span>
+                        <span class="feature-pill"><i class="fa-solid fa-utensils"></i> Đặc Sản Miền Trung</span>
+                    </div>
+                    <p class="car-desc">Khám phá vẻ đẹp lung linh của đêm đèn lồng Phố Cổ, thưởng thức cao lầu và chèo thuyền thả hoa đăng trên sông Hoài.</p>
+                    <div class="card-price-row">
+                        <div class="price-box">
+                            <div class="old-price">4.700.000 VNĐ</div>
+                            <div class="car-price">3.990.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <a href="chitiet.html" class="btn btn-block">Xem Chi Tiết Tour</a>
+                </div>
+            </div>
+
+            <!-- Tour 3 -->
+            <div class="car-card">
+                <div class="card-img-wrapper">
+                    <img src="images/sapa.jpg" alt="Tour Sapa">
+                    <span class="card-tag"><i class="fa-solid fa-star"></i> 4.88 (1.5k)</span>
+                    <span class="card-discount">-25%</span>
+                </div>
+                <div class="car-card-body">
+                    <div class="card-location"><i class="fa-solid fa-location-dot"></i> Sapa, Lào Cai</div>
+                    <h3 class="car-card-title">Tour Ruộng Bậc Thang Sapa - Fansipan</h3>
+                    <div class="tour-features">
+                        <span class="feature-pill"><i class="fa-regular fa-clock"></i> 3N2Đ</span>
+                        <span class="feature-pill"><i class="fa-solid fa-mountain"></i> Cáp Treo Fansipan</span>
+                        <span class="feature-pill"><i class="fa-solid fa-bus"></i> Xe giường nằm VIP</span>
+                    </div>
+                    <p class="car-desc">Chinh phục đỉnh Fansipan - Nóc nhà Đông Dương, check-in bản Cát Cát rực rỡ và săn mây trên đỉnh đèo Ô Quy Hồ.</p>
+                    <div class="card-price-row">
+                        <div class="price-box">
+                            <div class="old-price">4.850.000 VNĐ</div>
+                            <div class="car-price">3.650.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <a href="chitiet.html" class="btn btn-block">Xem Chi Tiết Tour</a>
+                </div>
+            </div>
+
+            <!-- Tour 4 -->
+            <div class="car-card">
+                <div class="card-img-wrapper">
+                    <img src="images/phuquoc.jpg" alt="Tour Đảo Ngọc Phú Quốc">
+                    <span class="card-tag"><i class="fa-solid fa-star"></i> 5.0 (2.1k)</span>
+                    <span class="card-discount">-18%</span>
+                </div>
+                <div class="car-card-body">
+                    <div class="card-location"><i class="fa-solid fa-location-dot"></i> Phú Quốc, Kiên Giang</div>
+                    <h3 class="car-card-title">Tour Đảo Ngọc Phú Quốc - Resort Biển 5★</h3>
+                    <div class="tour-features">
+                        <span class="feature-pill"><i class="fa-regular fa-clock"></i> 4N3Đ</span>
+                        <span class="feature-pill"><i class="fa-solid fa-umbrella-beach"></i> Resort 5★ Biển</span>
+                        <span class="feature-pill"><i class="fa-solid fa-plane"></i> Vé Máy Bay Trọn Gói</span>
+                    </div>
+                    <p class="car-desc">Nghỉ dưỡng tại Resort 5 sao mặt biển, lặn ngắm san hô Đảo Mây Rút, trải nghiệm cáp treo Hòn Thơm kỷ lục.</p>
+                    <div class="card-price-row">
+                        <div class="price-box">
+                            <div class="old-price">8.500.000 VNĐ</div>
+                            <div class="car-price">6.990.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <a href="chitiet.html" class="btn btn-block">Xem Chi Tiết Tour</a>
+                </div>
+            </div>
+
+            <!-- Tour 5 -->
+            <div class="car-card">
+                <div class="card-img-wrapper">
+                    <img src="images/ninhbinh.jpg" alt="Tour Tràng An Ninh Bình">
+                    <span class="card-tag"><i class="fa-solid fa-star"></i> 4.85 (750)</span>
+                    <span class="card-discount">-10%</span>
+                </div>
+                <div class="car-card-body">
+                    <div class="card-location"><i class="fa-solid fa-location-dot"></i> Tràng An, Ninh Bình</div>
+                    <h3 class="car-card-title">Tour Quần Thể Tràng An - Ninh Bình</h3>
+                    <div class="tour-features">
+                        <span class="feature-pill"><i class="fa-regular fa-clock"></i> 2N1Đ</span>
+                        <span class="feature-pill"><i class="fa-solid fa-person-rowing"></i> Thuyền Tràng An</span>
+                        <span class="feature-pill"><i class="fa-solid fa-torii-gate"></i> Chùa Bái Đính</span>
+                    </div>
+                    <p class="car-desc">Thăm di sản thế giới Tràng An lung linh, viếng Chùa Bái Đính và leo 500 bậc đá đỉnh Hang Múa ngắm cảnh.</p>
+                    <div class="card-price-row">
+                        <div class="price-box">
+                            <div class="old-price">2.750.000 VNĐ</div>
+                            <div class="car-price">2.450.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <a href="chitiet.html" class="btn btn-block">Xem Chi Tiết Tour</a>
+                </div>
+            </div>
+
+            <!-- Tour 6 -->
+            <div class="car-card">
+                <div class="card-img-wrapper">
+                    <img src="images/danang.jpg" alt="Tour Bà Nà Hills Đà Nẵng">
+                    <span class="card-tag"><i class="fa-solid fa-star"></i> 4.92 (1.8k)</span>
+                    <span class="card-discount">-15%</span>
+                </div>
+                <div class="car-card-body">
+                    <div class="card-location"><i class="fa-solid fa-location-dot"></i> Đà Nẵng - Bà Nà Hills</div>
+                    <h3 class="car-card-title">Tour Cầu Vàng Bà Nà Hills - Đà Nẵng</h3>
+                    <div class="tour-features">
+                        <span class="feature-pill"><i class="fa-regular fa-clock"></i> 3N2Đ</span>
+                        <span class="feature-pill"><i class="fa-solid fa-bridge"></i> Cầu Vàng Bà Nà</span>
+                        <span class="feature-pill"><i class="fa-solid fa-water"></i> Biển Mỹ Khê</span>
+                    </div>
+                    <p class="car-desc">Check-in Cầu Vàng biểu tượng thế giới, hòa mình vào không gian Châu Âu Bà Nà Hills và tắm biển Mỹ Khê.</p>
+                    <div class="card-price-row">
+                        <div class="price-box">
+                            <div class="old-price">6.100.000 VNĐ</div>
+                            <div class="car-price">5.200.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <a href="chitiet.html" class="btn btn-block">Xem Chi Tiết Tour</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. BẢNG SO SÁNH THÔNG TIN TOUR (SLIDE 2.1 WEB101 TABLE) -->
+        <h2 class="section-title">Bảng So Sánh Chi Tiết Các Tour Hot</h2>
+        <table class="specs-table">
+            <caption>Bảng 1.1: Thông tin tổng quan các hành trình du lịch chủ lực</caption>
+            <thead>
+                <tr>
+                    <th>Điểm Đến</th>
+                    <th>Thời Gian</th>
+                    <th>Phương Tiện</th>
+                    <th>Tiêu Chuẩn Khách Sạn</th>
+                    <th>Giá Ưu Đãi (VNĐ)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong><i class="fa-solid fa-water"></i> Vịnh Hạ Long</strong></td>
+                    <td>3 Ngày 2 Đêm</td>
+                    <td>Xe Dcar Limousine & Du thuyền</td>
+                    <td>Du thuyền 5★ Đẳng cấp</td>
+                    <td><mark>4.850.000</mark></td>
+                </tr>
+                <tr>
+                    <td><strong><i class="fa-solid fa-umbrella-beach"></i> Đảo Ngọc Phú Quốc</strong></td>
+                    <td>4 Ngày 3 Đêm</td>
+                    <td>Máy bay & Canô siêu tốc</td>
+                    <td>Resort 5★ Biển</td>
+                    <td><mark>6.990.000</mark></td>
+                </tr>
+                <tr>
+                    <td><strong><i class="fa-solid fa-city"></i> Bà Nà Hills - Đà Nẵng</strong></td>
+                    <td>3 Ngày 2 Đêm</td>
+                    <td>Máy bay & Xe du lịch 45 chỗ</td>
+                    <td>Khách sạn 4★ Trung tâm</td>
+                    <td><mark>5.200.000</mark></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 10. DANH SÁCH DỊCH VỤ ĐẶC QUYỀN -->
+        <div class="highlight-box">
+            <h3><i class="fa-solid fa-gift"></i> Quyền Lợi & Ưu Đãi Đặc Quyền Khi Đặt Tour Tại Mona Tour</h3>
+            <ul class="custom-list">
+                <li><strong><i class="fa-solid fa-van-shuttle"></i> Xe du lịch đời mới:</strong> Đưa đón tận nơi, xe máy lạnh cao cấp trang bị wifi & nước uống miễn phí.</li>
+                <li><strong><i class="fa-solid fa-user-check"></i> Hướng dẫn viên chuyên nghiệp:</strong> Hướng dẫn viên phục vụ suốt tuyến, vui vẻ, tận tâm và am hiểu văn hóa.</li>
+                <li><strong><i class="fa-solid fa-utensils"></i> Thực đơn phong phú:</strong> Thưởng thức đặc sản vùng miền nổi tiếng tại các nhà hàng tiêu chuẩn sạch sẽ.</li>
+                <li><strong><i class="fa-solid fa-award"></i> Quà tặng đặc quyền:</strong> Tặng nón du lịch cao cấp, mũ đi biển và voucher giảm 10% cho tour kế tiếp.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 11. MONA TOUR FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Mona <span>Tour</span></h3>
+                <p>Thương hiệu dịch vụ lữ hành du lịch Mona Tour - Du Lịch Việt Nam. Kết nối cảm xúc, tôn vinh di sản và kiến tạo những kỳ nghỉ mơ ước cho du khách.</p>
+                <p><i class="fa-solid fa-location-dot"></i> 1073/23 Cách Mạng Tháng 8, P.7, Q.Tân Bình, TP.HCM</p>
+                <p><i class="fa-solid fa-phone"></i> Hotline VIP: 1900 6868 | Email: info@themona.global</p>
+            </div>
+            <div class="footer-column">
+                <h4>Khám Phá Tour</h4>
+                <ul>
+                    <li><a href="sanpham.html"><i class="fa-solid fa-angle-right"></i> Tour Du Lịch Miền Bắc</a></li>
+                    <li><a href="sanpham.html"><i class="fa-solid fa-angle-right"></i> Tour Du Lịch Miền Trung</a></li>
+                    <li><a href="sanpham.html"><i class="fa-solid fa-angle-right"></i> Tour Du Lịch Miền Nam</a></li>
+                    <li><a href="sanpham.html"><i class="fa-solid fa-angle-right"></i> Tour Biển Đảo Phú Quốc</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Trang Liên Kết</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Trang Chủ</a></li>
+                    <li><a href="gioithieu.html"><i class="fa-solid fa-angle-right"></i> Về Chúng Tôi</a></li>
+                    <li><a href="dangnhap.html"><i class="fa-solid fa-angle-right"></i> Đăng Nhập VIP</a></li>
+                    <li><a href="dangky.html"><i class="fa-solid fa-angle-right"></i> Đăng Ký Thành Viên</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Kết Nối Về Chúng Tôi</h4>
+                <div style="display: flex; gap: 15px; font-size: 20px; margin-top: 10px;">
+                    <a href="#" style="color: var(--mona-green);"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" style="color: var(--mona-green);"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" style="color: var(--mona-green);"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" style="color: var(--mona-green);"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mona Tour - Du Lịch Việt Nam. Bản quyền thuộc về sinh viên FPT Polytechnic - WEB101 Assignment.</p>
+            <a href="#top" class="top-link"><i class="fa-solid fa-arrow-up"></i> Lên đầu trang</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
